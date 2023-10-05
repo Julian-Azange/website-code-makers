@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import { ServicesPageComponent } from './pages/services-page/services-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { TeamPageComponent } from './pages/team-page/team-page.component';
@@ -33,7 +34,7 @@ const routes: Routes = [
     component: ClientsPageComponent
   },
   {
-    path: '**', // Wildcard route for a 404 page
+    path: '**',
     redirectTo: 'home',
     pathMatch: 'full'
   }

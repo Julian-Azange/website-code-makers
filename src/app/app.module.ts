@@ -26,6 +26,7 @@ import { CardClientsComponent } from './widgets/card-clients/card-clients.compon
 import { SliderNewsComponent } from './widgets/slider-news/slider-news.component';
 import { CardTeamComponent } from './widgets/card-team/card-team.component';
 import { HeroAreaComponent } from './components/hero-area/hero-area.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { HeroAreaComponent } from './components/hero-area/hero-area.component';
   ],
   imports: [
     BrowserModule,
+    RouterModule,
     AppRoutingModule
   ],
   providers: [],

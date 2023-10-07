@@ -27,4 +27,14 @@
 body {
     font-family: 'Black Ops One', cursive;
     font-family: Poppins-Regular, sans-serif;
+    background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Poppins-Bold, sans-serif;
 }

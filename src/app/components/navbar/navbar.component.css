@@ -1,0 +1,17 @@
+.navbar {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-transparent {
+    background-color: transparent !important;
+    position: absolute;
+    width: 100%;
+}
+
+.navbar-white {
+    background-color: #ffffff !important;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}

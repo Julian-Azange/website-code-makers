@@ -1,11 +1,11 @@
-<nav class="navbar navbar-expand-lg py-3 navbar-light">
+<nav class="navbar navbar-expand-lg py-3"
+    [ngClass]="{'navbar-transparent': isNavbarTransparent, 'navbar-white': !isNavbarTransparent}">
     <div class="container">
-        <a class="navbar-brand" href="#"
-                class="align-middle me-1" alt="My Website">
-                <img src="assets/logos/LOGO CODE MAKERS. VARIACIONpng.png" alt="" width="220" height="60">
-            </a>
+        <a class="navbar-brand" href="#" class="align-middle me-1" alt="code makers">
+            <img src="assets/logos/LOGO CODE MAKERS. VARIACIONpng.png" alt="" width="220" height="60">
+        </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar3"
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar3"
             aria-controls="myNavbar3" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>

@@ -9,9 +9,41 @@
 }
 
 .navbar-white {
-    background-color: #ffffff !important;
+    background-color: #ffffff;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
+}
+
+.dark-mode {
+    background-color: #333;
+    /* Cambia el color de fondo del modo oscuro */
+    color: #fff;
+    /* Cambia el color del texto para que sea legible en el modo oscuro */
+    /* Agrega otros estilos de modo oscuro según sea necesario */
+}
+
+
+
+@media (max-width: 992px) {
+    .nav-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .mennu {
+        background-color: rgba(246, 246, 246, 0.158);
+        backdrop-filter: blur(10px);
+        border-radius: 5px;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5px;
+    }
 }

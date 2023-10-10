@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./hero-area.component.css']
 })
 export class HeroAreaComponent {
-
+    
 }

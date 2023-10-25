@@ -1,0 +1,8 @@
+.blur{
+    background-color: #ffffff3b;
+    backdrop-filter: blur(20px);
+}
+
+.fa-laptop-code{
+    font-size: 50px;
+}

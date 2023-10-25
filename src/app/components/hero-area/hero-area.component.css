@@ -11,3 +11,9 @@
     margin-top: -20px;
 }
 
+@media (max-width: 768px) {
+    .display-2{
+        font-size: 5rem;
+    }
+    
+}

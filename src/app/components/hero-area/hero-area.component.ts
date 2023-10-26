@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./hero-area.component.css']
 })
 export class HeroAreaComponent {
-    
+    scrollDown() {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: 'smooth'
+    });
+  }
 }

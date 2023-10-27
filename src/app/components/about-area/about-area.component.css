@@ -1,3 +1,10 @@
 .about{
     height: 120vh;
 }
+
+@media (max-width: 768px) {
+    .img{
+        display: none;
+    }
+    
+}

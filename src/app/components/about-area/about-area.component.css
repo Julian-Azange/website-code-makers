@@ -1,10 +1,19 @@
-.about{
-    height: 120vh;
-}
+
 
 @media (max-width: 768px) {
     .img{
         display: none;
     }
-    
+    .display-1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .p-display{
+        padding: 10px;
+        font-size: 12px;
+        text-align: justify;
+    }
+    .b1{
+        text-align: center;
+    }
 }

@@ -1,5 +1,5 @@
 .blur{
-    background-color: #ffffff3b;
+    background-color: #3aaaff22;
     backdrop-filter: blur(20px);
 }
 
@@ -10,5 +10,8 @@
 @media (max-width: 768px) {
     .mt{
         margin-top: 30px;
+    }
+    .p1{
+        font-size: 15px;
     }
 }

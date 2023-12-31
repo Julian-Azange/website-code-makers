@@ -26,11 +26,61 @@
     background-color: #020cd1;
 }
 
+/* Button whatsapp */
+#whatsapp {
+    display: relative;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 120px;
+    /* Ajusta la posición vertical inicial del botón de WhatsApp */
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    border: #25d366;
+    opacity: 0.8;
+    transition: transform 0.3s ease, opacity 0.3s ease, bottom 0.3s ease;
+    /* Agrega la propiedad bottom a la transición */
+}
+
+#whatsapp:hover {
+    transform: scale(1.1);
+    background-color: #1fb857;
+}
+
+#whatsapp:active {
+    background-color: #1fb857;
+}
+
+.modal-content i{
+    font-size: 30px;
+    color: #fff;
+
+}
+
+.bg-wp{
+    background-color: #25d366;
+}
+
 @media (max-width: 991px) {
     #scroll-to-top {
         width: 40px;
         height: 40px;
         bottom: 20px;
+        right: 20px;
+        font-size: 20px;
+    }
+
+    #whatsapp {
+        width: 40px;
+        height: 40px;
+        bottom: 80px;
+        /* Ajusta la posición vertical inicial del botón de WhatsApp en pantallas más pequeñas */
         right: 20px;
         font-size: 20px;
     }

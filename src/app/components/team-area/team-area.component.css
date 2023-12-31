@@ -1,5 +1,29 @@
 .blur {
-    background-color: #ffffff3b;
+    background-color: #ffffffa9;
     backdrop-filter: blur(20px);
 }
 
+
+/* card */
+.card {
+    width: 190px;
+    height: 254px;
+    border-radius: 50px;
+    border: none;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebea0,
+        -20px -20px 60px #ffffff;
+}
+
+.name-client {
+    margin: 0;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.name-client span {
+    display: block;
+    font-weight: 200;
+    font-size: 16px;
+}

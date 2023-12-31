@@ -16,6 +16,16 @@
     z-index: 1000;
 }
 
+/* Estilo para hover */
+.nav-item-32739:hover a {
+    color: #249ff7;
+}
+
+/* Estilo para activo */
+.nav-item-32739.active a {
+    color: #249ff7;
+}
+
 .fa-moon{
     color: #249ff7;
 }

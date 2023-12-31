@@ -13,57 +13,33 @@
         <div class="lc-block collapse navbar-collapse mennu" id="myNavbar3">
             <div lc-helper="shortcode" class="live-shortcode ms-auto">
                 <ul id="menu-menu-1" class="navbar-nav me-auto mb-2 mb-md-0 navbar-nav">
-                    <li class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-32739">
-                        <a href="#" class="nav-link " routerLink="home" (click)="closeNavbar()">Inicio</a>
+                    <li [ngClass]="{'nav-item-32739': true, 'active': activeItem === 'home'}">
+                        <a href="#" class="nav-link" routerLink="home" (click)="setActiveItem('home')"
+                            (click)="closeNavbar()">Inicio</a>
                     </li>
-                    <li class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-32739">
-                        <a href="#" class="nav-link " routerLink="about" (click)="closeNavbar()">Acerca de</a>
+                    <li [ngClass]="{'nav-item-32739': true, 'active': activeItem === 'about'}">
+                        <a href="#" class="nav-link" routerLink="about" (click)="setActiveItem('about')"
+                            (click)="closeNavbar()">Acerca de</a>
                     </li>
-                    <!-- <li class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-32739">
-                        <a href="#" class="nav-link " routerLink="services" (click)="closeNavbar()">Servicios</a>
-                    </li> -->
-                    <li class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-32739">
-                        <a href="#" class="nav-link " routerLink="team" (click)="closeNavbar()">Equipo</a>
+                    <li [ngClass]="{'nav-item-32739': true, 'active': activeItem === 'team'}">
+                        <a href="#" class="nav-link" routerLink="team" (click)="setActiveItem('team')"
+                            (click)="closeNavbar()">Equipo</a>
                     </li>
-                    <li class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-32739">
-                        <a href="#" class="nav-link " routerLink="contact" (click)="closeNavbar()">Contacto</a>
+                    <li [ngClass]="{'nav-item-32739': true, 'active': activeItem === 'contact'}">
+                        <a href="#" class="nav-link" routerLink="contact" (click)="setActiveItem('contact')"
+                            (click)="closeNavbar()">Contacto</a>
                     </li>
                 </ul>
+
             </div>
             <div class="lc-block ms-auto d-grid gap-2 d-lg-block button">
                 <!-- <a class="btn btn-dark rounded-5" href="#" role="button" (click)="toggleTheme()">
                     <i [ngClass]="iconClass"></i>
                 </a> -->
-                <!-- <a class="btn btn-success rounded-5" href="#" role="button" data-bs-toggle="modal"
-                    data-bs-target="#whatsappModal">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a> -->
+                
             </div>
 
-            <div class="modal fade" id="whatsappModal" tabindex="-1" aria-labelledby="contactoWhatsapp"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-scrollable">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Contacto por WhatsApp</h5>
-                        </div>
-                        <div class="modal-body">
-                            <p>Puedes contactarnos por WhatsApp para obtener más información sobre nuestros servicios.
-                            </p>
-                            <p>Nuestro número de WhatsApp es: <strong>+57 3134067587</strong></p>
-                            <div class="d-flex justify-content-center">
-                                <a href="https://wa.link/xf6u91" target="_blank"
-                                    class="btn btn-success">
-                                    Iniciar Chat en WhatsApp
-                                </a>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
 
         </div>
     </div>

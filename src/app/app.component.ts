@@ -6,17 +6,19 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'code-makers-dev';
-
   // Mostrar u ocultar el botón cuando se hace scroll
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
-    const button = document.getElementById('scroll-to-top');
-    if (button) {
+    const buttonWhatsApp = document.getElementById('whatsapp');
+    const buttonScrollToTop = document.getElementById('scroll-to-top');
+
+    if (buttonWhatsApp && buttonScrollToTop) {
       if (window.scrollY > 600) {
-        button.style.display = 'block';
+        buttonScrollToTop.style.display = 'block';
+        buttonWhatsApp.style.bottom = '120px'; // Ajusta la posición vertical del botón de WhatsApp al hacer scroll
       } else {
-        button.style.display = 'none';
+        buttonScrollToTop.style.display = 'none';
+        buttonWhatsApp.style.bottom = '40px'; // Ajusta la posición vertical inicial del botón de WhatsApp
       }
     }
   }

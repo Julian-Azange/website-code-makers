@@ -72,5 +72,12 @@ export class NavbarComponent implements OnInit {
     navbarToggler.click();
   }
 
+  // Variable para rastrear el ítem activo
+  activeItem: string = '';
+
+  // Método para establecer el ítem activo
+  setActiveItem(item: string) {
+    this.activeItem = item;
+  }
 
 }

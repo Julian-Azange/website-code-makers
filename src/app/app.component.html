@@ -3,33 +3,37 @@
 <app-footer></app-footer>
 
 
-<button class="hidden" id="scroll-to-top" (click)="scrollToTop()">
+<button class="hidden button" id="scroll-to-top" (click)="scrollToTop()">
     <i class="fa fa-angle-up arrow-up"></i>
 </button>
 
 <a class="btn btn-success rounded-5 hidden" id="whatsapp" href="#" role="button" data-bs-toggle="modal"
-    data-bs-target="#whatsappModal">
+    data-bs-target="#whatsappModal" style="bottom: 40px;">
     <i class="fa-brands fa-whatsapp"></i>
 </a>
 
 
 <div class="modal fade" id="whatsappModal" tabindex="-1" aria-labelledby="contactoWhatsapp" aria-hidden="true">
+
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
-            <div class="modal-header bg-wp">
-                <i class="fa-brands fa-whatsapp"></i>
-            </div>
             <div class="modal-body">
-                <p>Puedes contactarnos por WhatsApp para obtener más información sobre nuestros servicios.</p>
-                <p>Nuestro número de WhatsApp es: <strong>+57 3134067587</strong></p>
+
+                <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <div class="text-center mb-3">
+                    <img class="mb-2" src="assets/logos/whatsapp.png" width="130px" alt="">
+                    <h4>Whatsapp</h4>
+                </div>
+
+                <p class="text-center">Puedes contactarnos por WhatsApp para obtener más información sobre nuestros
+                    servicios.</p>
                 <div class="d-flex justify-content-center">
-                    <a href="https://wa.link/xf6u91" target="_blank" class="btn btn-success">
-                        Iniciar Chat en WhatsApp
+                    <a href="https://wa.link/xf6u91" target="_blank" class="btn button-chat">
+                        Abrir chat
                     </a>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+
             </div>
         </div>
     </div>

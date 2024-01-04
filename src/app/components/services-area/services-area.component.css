@@ -1,17 +1,20 @@
-.blur{
-    background-color: #3aaaff22;
-    backdrop-filter: blur(20px);
+.card-service {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 20px 20px 30px rgba(58, 170, 255, 0.133);
+    height: 400px;
 }
 
-.fa-laptop-code{
+.fa-laptop-code {
     font-size: 50px;
 }
 
 @media (max-width: 768px) {
-    .mt{
+    .mt {
         margin-top: 30px;
     }
-    .p1{
+
+    .p1 {
         font-size: 15px;
     }
 }

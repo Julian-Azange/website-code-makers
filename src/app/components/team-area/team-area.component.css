@@ -15,6 +15,11 @@
         -20px -20px 60px #ffffff;
 }
 
+.card:hover {
+    background: #bedbff;
+    box-shadow: 20px 20px 60px #bebebea0,
+        -20px -20px 60px #ffffff;
+}
 .name-client {
     margin: 0;
     margin-top: 20px;
@@ -27,3 +32,5 @@
     font-weight: 200;
     font-size: 16px;
 }
+
+/* card-team */

@@ -20,6 +20,9 @@ export class AppComponent {
         buttonScrollToTop.style.display = 'none';
         buttonWhatsApp.style.bottom = '40px'; // Ajusta la posición vertical inicial del botón de WhatsApp
       }
+      if(window.innerWidth <= 991){
+        buttonWhatsApp.style.bottom = '80px';
+      }
     }
   }
 

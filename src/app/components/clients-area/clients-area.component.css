@@ -1,5 +1,6 @@
-.blur{
-    background-color: #3aaaff22;
-    backdrop-filter: blur(20px);
-    border: none;
+.card-client {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #98e2ff9d;
+    
 }
